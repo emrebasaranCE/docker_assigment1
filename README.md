@@ -38,3 +38,11 @@ are removed automatically when stopped.
 
 - `docker run -d --rm --name node-app-container node-app:latest` for node-app
 - `docker run -it --rm --name python-app-container python-app:latest` for python-app
+
+### Uploading image to Docker Hub Repository
+
+To upload image to docker hub, we first need to create a new repository. After that, we will have something like this: `[user_name]/[repo_name]`
+To upload our image, we need the image name to be like `[user_name]/[repo_name]`. 
+
+So its something like this: `docker push [user_name]/[repo_name]`
+
