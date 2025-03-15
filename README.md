@@ -19,7 +19,7 @@
 
 3) Re-create both containers and assign names to both containers.
 
-- `docker run -d -p 3000:3000 --name node-app_container [image_id/name]`
+- `docker run -d -p 3000:3000 --name node-app_container [image_id/name]` for node-app
 - `docker run -it --name python_container [image_id/name]` for python-app
 
 4) Clean up (remove) all stopped (and running) containers, clean up all created images.
@@ -36,5 +36,5 @@
 6) Run new containers based on the re-built images, ensuring that the containers
 are removed automatically when stopped.
 
-- `docker run -d --rm --name node-app-container node-app:latest`
-- `docker run -it --rm --name python-app-container python-app:latest`
+- `docker run -d --rm --name node-app-container node-app:latest` for node-app
+- `docker run -it --rm --name python-app-container python-app:latest` for python-app
